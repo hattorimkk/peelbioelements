@@ -1,0 +1,148 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 95%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #2f2e7d;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #2e3a7d;
+    margin-top: 30px;
+}
+
+.section {
+    margin-bottom: 20px;
+    border-bottom: 2px solid #2e2f7d;
+    padding-bottom: 20px;
+}
+
+.section-title {
+    color: #2e4a7d;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.condition-solution-pair {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.condition {
+    font-weight: bold;
+    color: #333;
+    flex: 0.4;
+}
+
+.condition-select{
+    flex: 0.3;
+}
+
+.solution {
+    padding: 10px;
+    background-color: #e8f5e9;
+    border: 1px solid #c8cbe6;
+    border-radius: 4px;
+    color: #2e337d;
+    flex: 0.3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.solution p {
+    margin: 5px 0;
+}
+
+.condition-select select{
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    appearance: none;
+    background-color: #fff;
+    background-image: url('data:image/svg+xml;utf8,<svg fill="%232e7d32" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>');
+    background-repeat: no-repeat;
+    background-position-x: 98%;
+    background-position-y: 50%;
+    color: #333;
+    text-align: center; /* Canh giữa text */
+    text-align-last: center; /* Canh giữa mũi tên (trên một số trình duyệt) */
+}
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-right{
+    display: flex;
+    align-items: center;
+}
+
+.solution-label{
+    padding: 10px;
+    color: #2e3a7d;
+    font-weight: bold;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 600px) {
+    .container {
+        width: 98%;
+        margin: 10px auto;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .section-title{
+        font-size: 16px;
+    }
+
+    .condition-solution-pair {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .condition {
+        margin-bottom: 5px;
+        font-size: 14px;
+    }
+    .condition-select{
+        width: 100%;
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+    .condition-select select{
+        font-size: 16px;
+        width: 95%;
+        text-align: center; /* Canh giữa text */
+        text-align-last: center; /* Canh giữa mũi tên (trên một số trình duyệt) */
+    }
+    .solution {
+        width: 90%;
+        font-size: 14px;
+    }
+}
